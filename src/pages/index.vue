@@ -1,11 +1,11 @@
 <script setup lang="ts">
 const user = useUserStore()
-const name = $ref(user.savedName)
+const mail = $ref(user.savedName)
+const password = $ref(user.savedName)
 
 const router = useRouter()
 const go = () => {
-  if (name)
-    router.push(`/hi/${encodeURIComponent(name)}`)
+  router.push(`/hi/${encodeURIComponent(name)}`)
 }
 
 const { t } = useI18n()
@@ -25,19 +25,16 @@ const { t } = useI18n()
 
     <div py-4 />
 
-    <Input v-model="name" />
+    <Input v-model="mail" placeholder="xxxxxxx@xxxx.com" />
+    <Input v-model="password" type="password" placeholder="" />
     <div>
       <button
         btn m-3 text-sm
-        :disabled="!name"
         @click="go"
       >
         {{ t('button.go') }}
       </button>
     </div>
-    <p v-for="n in 30">
-      Curioph {{ n }}
-    </p>
   </div>
 </template>
 

@@ -10,6 +10,10 @@ const props = defineProps({
     type: String,
     default: '',
   },
+  placeholder: {
+    type: String,
+    default: '',
+  },
   disabled: {
     type: Boolean,
     default: false,
@@ -28,11 +32,11 @@ const props = defineProps({
   },
 })
 const model = useVModel(props, 'modelValue')
-const { inputClasses, sizeClasses, labelClasses } = useInputClasses(toRefs(props))
+const { labelClasses } = useInputClasses(toRefs(props))
 </script>
 
 <template>
-  <div>
+  <div class="mb-6">
     <label v-if="label" :class="labelClasses">{{ label }}</label>
     <div class="flex relative">
       <div v-if="$slots.prefix" class="w-10 flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none overflow-hidden">
@@ -42,14 +46,20 @@ const { inputClasses, sizeClasses, labelClasses } = useInputClasses(toRefs(props
         v-bind="$attrs"
         v-model="model"
         :disabled="disabled"
+        :placeholder="placeholder"
         :type="type"
-        :class="[inputClasses, sizeClasses, $slots.prefix ? 'pl-10' : '']"
+        :class="[
+          'block w-full bg-gray-50 border border-gray-300 text-gray-900 p-2.5 text-sm rounded-16px',
+          'focus:ring-blue-500 focus:border-blue-500',
+          'dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500',
+          $slots.prefix ? 'pl-10' : '',
+        ]"
       >
       <div v-if="$slots.suffix" class="absolute right-2.5 bottom-2.5">
         <slot name="suffix" />
       </div>
     </div>
-    <p v-if="$slots.helper" class="mt-2 text-sm text-gray-500 dark:text-gray-400">
+    <p v-if="$slots.helper" class="mt-2 tet-sm text-gray-500 dark:text-gray-400">
       <slot name="helper" />
     </p>
   </div>

@@ -35,4 +35,12 @@ export default defineConfig({
     transformerVariantGroup(),
   ],
   safelist: 'prose prose-sm m-auto text-left'.split(' '),
+  theme: {
+    breakpoints: {
+      xs: '475px',
+      sm: '640px',
+      md: '768px',
+    },
+
+  },
 })
