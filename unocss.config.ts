@@ -46,9 +46,15 @@ export default defineConfig({
         light: '#F26262',
         dark: '#d96161',
       },
+      beni: '#F26262',
       ajisai: '#AFB9DF',
       yami: '#2A295B',
     },
-
+    boxShadow: {
+      top: '0px -4px 25px rgba(0, 0, 0, 0.08)',
+    },
+    fontSize: {
+      xxs: '0.625rem',
+    },
   },
 })

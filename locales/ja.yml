@@ -1,9 +1,12 @@
 button:
   login: 'ログイン'
-  about: これは？
+  plan: 'プラン'
+  bubble: 'バブル'
+  connect: 'コネクト'
+  report: 'レポート'
+  account: 'アカウント'
   back: 戻る
   go: 進む
-  home: ホーム
   toggle_dark: ダークモード切り替え
   toggle_langs: 言語切り替え
 intro:

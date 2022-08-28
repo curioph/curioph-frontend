@@ -1,6 +1,34 @@
 <script setup lang="ts">
 const { t, availableLocales, locale } = useI18n()
 
+const pages = [
+  {
+     icon: 'img/icn_plan.png',
+     label: t('button.plan'),
+     to: '/plan',
+  },
+  {
+     icon: 'img/icn_bubble.png',
+     label: t('button.bubble'),
+     to: '/bubble',
+  },
+  {
+     icon: 'img/icn_connect.png',
+     label: t('button.connect'),
+     to: '/connect',
+  },
+  {
+     icon: 'img/icn_report.png',
+     label: t('button.report'),
+     to: '/report',
+  },
+  {
+     icon: 'img/icn_account.png',
+     label: t('button.account'),
+     to: '/account',
+  },
+]
+
 const toggleLocales = () => {
   // change to some real logic
   const locales = availableLocales
@@ -9,25 +37,19 @@ const toggleLocales = () => {
 </script>
 
 <template>
-  <nav text-xl mt-6>
-    <RouterLink class="icon-btn mx-2" to="/" :title="t('button.home')">
-      <div i-carbon-campsite />
-    </RouterLink>
-
-    <button class="icon-btn mx-2 !outline-none" :title="t('button.toggle_dark')" @click="toggleDark()">
-      <div i="carbon-sun dark:carbon-moon" />
-    </button>
-
-    <a class="icon-btn mx-2" :title="t('button.toggle_langs')" @click="toggleLocales()">
-      <div i-carbon-language />
-    </a>
-
-    <RouterLink class="icon-btn mx-2" to="/about" :title="t('button.about')">
-      <div i-carbon-dicom-overlay />
-    </RouterLink>
-
-    <a class="icon-btn mx-2" rel="noreferrer" href="https://github.com/antfu/vitesse" target="_blank" title="GitHub">
-      <div i-carbon-logo-github />
-    </a>
+  <nav text-xxs text-center px-9 py-6 flex justify-between shadow-top rounded-t-10>
+    <router-link
+      v-for="page in pages"
+      :to="page.to"
+      :title="page.label"
+    >
+      <i mb-3 inline-block><img :src="page.icon" :alt="page.label"></i><br>
+      <span>{{ page.label }}</span>
+    </router-link>
   </nav>
 </template>
+<style scoped>
+.router-link-active {
+  @apply color-beni
+}
+</style>
