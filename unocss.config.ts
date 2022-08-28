@@ -41,6 +41,14 @@ export default defineConfig({
       sm: '640px',
       md: '768px',
     },
+    colors: {
+      brand: {
+        light: '#F26262',
+        dark: '#d96161',
+      },
+      ajisai: '#AFB9DF',
+      yami: '#2A295B',
+    },
 
   },
 })

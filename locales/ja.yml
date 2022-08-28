@@ -1,4 +1,5 @@
 button:
+  login: 'ログイン'
   about: これは？
   back: 戻る
   go: 進む
@@ -11,3 +12,6 @@ intro:
   hi: こんにちは、{name}!
   whats-your-name: 君の名は。
 not-found: 見つかりませんでした
+link:
+  register: 新規アカウントの作成
+  forgot-password: パスワードを忘れた方
