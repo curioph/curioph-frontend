@@ -14,7 +14,7 @@ const { t } = useI18n()
 <template>
   <div class="mx-auto max-w-80%">
     <div class="flex justify-center">
-      <img class="w-25" src="curioph.png" alt="curioph logo" />
+      <img class="w-25" src="/curioph.png" alt="curioph logo" />
     </div>
     <div class="mb-8" />
     <form class="flex flex-col mb-8" @submit.stop.prevent="login">
