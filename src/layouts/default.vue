@@ -1,5 +1,5 @@
 <template>
-  <main class="flex-auto overflow-y-auto px-4 py-10">
+  <main class="flex-auto overflow-y-auto pt-2">
     <RouterView />
   </main>
   <Footer class="flex-none" />
