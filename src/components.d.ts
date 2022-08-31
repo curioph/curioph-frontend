@@ -7,7 +7,9 @@ export {}
 
 declare module '@vue/runtime-core' {
   export interface GlobalComponents {
+    Avatar: typeof import('./components/Avatar/Avatar.vue')['default']
     Button: typeof import('./components/Button/Button.vue')['default']
+    CheckboxButton: typeof import('./components/Checkbox/CheckboxButton.vue')['default']
     Counter: typeof import('./components/Counter.vue')['default']
     Footer: typeof import('./components/Footer.vue')['default']
     Input: typeof import('./components/Input/Input.vue')['default']

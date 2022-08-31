@@ -41,26 +41,19 @@ const colorMap = {
     background: '#EFF3F9',
   },
 }
-
 </script>
 
 <template>
-<a
-  flex mb-5
-  :style="{'background-color': colorMap[props.type].background}"
->
-  <figure w-28><img w-full h-full object-cover :src="props.image" :alt="props.title"></figure>
-  <div flex items-center py-5 px-4>
-    <div>
-      <h2
-        text-xl
-        :style="{'color': colorMap[props.type].title}"
-      >{{ title }}</h2>
-      <p
-        :style="{'color': colorMap[props.type].sub}"
-      >{{ sub }}</p>
+  <a flex mb-5 :style="{ 'background-color': colorMap[props.type].background }">
+    <figure w-28>
+      <img w-full h-full object-cover :src="props.image" :alt="props.title" />
+    </figure>
+    <div flex items-center py-5 px-4>
+      <div>
+        <h2 text-xl :style="{ 'color': colorMap[props.type].title }">{{ title }}</h2>
+        <p :style="{ 'color': colorMap[props.type].sub }">{{ sub }}</p>
+      </div>
     </div>
-  </div>
-</a>
+  </a>
 </template>
 
