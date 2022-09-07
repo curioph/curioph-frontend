@@ -1,5 +1,11 @@
 <template>
-  <div px-6 py-11 flex flex-col shadow-top rounded-t-10>
+  <div
+    px-6 py-11
+    flex columns-2 gap-x-3
+    shadow-top rounded-t-10
+    text-sm font-bold
+    class="plan-bubble"
+  >
     <a href class="plan-bubble__item">
       <figure class="plan-list__item-img">
         <img src="/img/bg_plan01.png" alt />
@@ -60,19 +66,13 @@
 
 <style>
 .plan-bubble {
-    display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    margin: 0 -22px;
-    padding: 5px 22px 45px;
-    border-radius: 40px 40px 0 0;
-    box-shadow: 0px -4px 18px rgba(0, 0, 0, 0.13);
 }
 
 .plan-bubble__item {
     position: relative;
     display: block;
-    margin-top: 35px;
+    margin-bottom: 35px;
     width: calc(50% - 9px);
     height: calc(50vw - 31px);
     background: #fff;
@@ -101,7 +101,6 @@
     position: absolute;
     left: 12px;
     top: 12px;
-    font-size: 1.4rem;
     color: #279698;
 }
 </style>
