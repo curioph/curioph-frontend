@@ -61,7 +61,7 @@
       </div>
       <div class="main-preview">
         <figure class="main-preview__img">
-          <img src="./img/img_preview.jpg" alt />
+          <img src="/img/img_preview.jpg" alt />
         </figure>
         <p class="main-preview__remove">
           <i class="fa-solid fa-trash-can"></i>
