@@ -69,7 +69,7 @@ const plans: IPlan[] = [
       <span text-2xl>1,000pt</span>
     </p>
   </header>
-  <div px-6 py-11 flex flex-col shadow-top rounded-t-10 min-h-full>
+  <div px-6 py-11 flex flex-col shadow-top rounded-t-10>
     <div flex items-center mb-5>
       <router-link mr-2 to="/plan" title="plan-add">
         <div i-carbon-chevron-left text-2xl />
@@ -111,4 +111,5 @@ const plans: IPlan[] = [
       </router-link>
     </div>
   </div>
+  <plan-bubble />
 </template>

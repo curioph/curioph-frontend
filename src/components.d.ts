@@ -14,6 +14,7 @@ declare module '@vue/runtime-core' {
     Footer: typeof import('./components/Footer.vue')['default']
     Input: typeof import('./components/Input/Input.vue')['default']
     ListItem: typeof import('./components/List/ListItem.vue')['default']
+    PlanBubble: typeof import('./components/Organism/PlanBubble.vue')['default']
     README: typeof import('./components/README.md')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
