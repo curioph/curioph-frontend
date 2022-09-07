@@ -35,13 +35,7 @@ const plans: IPlan[] = [
 </script>
 
 <template>
-  <header flex justify-end>
-    <p py-1 px-3 text-beni text-xxs text-semibold>
-      curiophポイント
-      <br>
-      <span text-2xl>1,000pt</span>
-    </p>
-  </header>
+  <Header />
   <div px-6 py-11 flex flex-col shadow-top rounded-t-10 min-h-full>
     <div flex justify-between items-center mb-5>
       <h1 text-22px>プランリスト</h1>

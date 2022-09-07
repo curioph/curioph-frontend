@@ -164,11 +164,6 @@
 
 <style>
 .suggest-plan {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  max-height: calc(100vh - 95px);
   padding: 28px 22px 112px;
   border-radius: 40px 40px 0 0;
   background: linear-gradient(44.43deg, #50e1d0 8.47%, #dacdff 85.32%);

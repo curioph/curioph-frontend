@@ -6,7 +6,7 @@
     text-sm font-bold
     class="plan-bubble"
   >
-    <a href class="plan-bubble__item">
+    <a href="/plan/edit" class="plan-bubble__item">
       <figure class="plan-list__item-img">
         <img src="/img/bg_plan01.png" alt />
       </figure>
@@ -15,7 +15,7 @@
         <br />して出かけよう
       </p>
     </a>
-    <a href class="plan-bubble__item">
+    <a href="/plan/edit" class="plan-bubble__item">
       <figure class="plan-list__item-img">
         <img src="/img/bg_plan02.png" alt />
       </figure>
@@ -24,7 +24,7 @@
         <br />アディクション
       </p>
     </a>
-    <a href class="plan-bubble__item">
+    <a href="/plan/edit" class="plan-bubble__item">
       <figure class="plan-list__item-img">
         <img src="/img/bg_plan03.png" alt />
       </figure>
@@ -33,7 +33,7 @@
         <br />精神統一
       </p>
     </a>
-    <a href class="plan-bubble__item">
+    <a href="/plan/edit" class="plan-bubble__item">
       <figure class="plan-list__item-img">
         <img src="/img/bg_plan04.png" alt />
       </figure>
@@ -42,7 +42,7 @@
         <br />抱いて眠りたい
       </p>
     </a>
-    <a href class="plan-bubble__item">
+    <a href="/plan/edit" class="plan-bubble__item">
       <figure class="plan-list__item-img">
         <img src="/img/bg_plan05.png" alt />
       </figure>
@@ -52,7 +52,7 @@
         <br />何もいらない
       </p>
     </a>
-    <a href class="plan-bubble__item">
+    <a href="/plan/edit" class="plan-bubble__item">
       <figure class="plan-list__item-img">
         <img src="/img/bg_plan06.png" alt />
       </figure>

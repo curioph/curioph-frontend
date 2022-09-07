@@ -12,6 +12,7 @@ declare module '@vue/runtime-core' {
     CheckboxButton: typeof import('./components/Checkbox/CheckboxButton.vue')['default']
     Counter: typeof import('./components/Counter.vue')['default']
     Footer: typeof import('./components/Footer.vue')['default']
+    Header: typeof import('./components/Header.vue')['default']
     Input: typeof import('./components/Input/Input.vue')['default']
     ListItem: typeof import('./components/List/ListItem.vue')['default']
     PlanBubble: typeof import('./components/Organism/PlanBubble.vue')['default']
